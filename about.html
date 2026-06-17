@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="module-container">
+    <h1>About Sentinel Security Suite</h1>
+
+    <div class="about-content">
+        <p>We are a team that developed <strong>Sentinel Security Suite</strong> as part of a <strong>Real-Time
+                Project</strong> with the goal of providing multiple cybersecurity services on a <strong>single unified
+                platform</strong>.</p>
+
+        <div class="features-list">
+            <h3>Services Offered</h3>
+            <ul>
+                <li>🎣 <strong>Phishing Detection</strong> - Analyze URLs for potential threats.</li>
+                <li>🦠 <strong>Malware Analysis</strong> - Hash-based file scanning.</li>
+                <li>🔑 <strong>Brute Force Attack</strong> - Simulate and detect login attacks.</li>
+                <li>🔒 <strong>File Encryption</strong> - AES encryption for sensitive data.</li>
+                <li>🔓 <strong>File Decryption</strong> - Restore encrypted files securely.</li>
+                <li>🛰️ <strong>IP Spoofing Detection</strong> - Detect source IP packet fraud.</li>
+            </ul>
+        </div>
+
+        <div class="tech-stack">
+            <h3>Technology Used</h3>
+            <span class="badge">Python</span>
+            <span class="badge">Flask</span>
+            <span class="badge">SQLite</span>
+            <span class="badge">HTML/CSS</span>
+        </div>
+
+        <p>This tool helps users identify threats, protect data, and understand cybersecurity risks in a <strong>simple,
+                interactive, and user-friendly way</strong>.</p>
+    </div>
+</div>
+
+<style>
+    .about-content {
+        line-height: 1.8;
+        color: var(--text-secondary);
+    }
+
+    .about-content h3 {
+        color: var(--text-primary);
+        margin-top: 2rem;
+        border-bottom: 2px solid var(--accent);
+        display: inline-block;
+        padding-bottom: 0.5rem;
+    }
+
+    .features-list ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .features-list li {
+        margin-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+
+    .features-list li:before {
+        content: "•";
+        color: var(--accent);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        background: rgba(56, 189, 248, 0.1);
+        color: var(--accent);
+        border: 1px solid var(--accent);
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+</style>
+{% endblock %}
